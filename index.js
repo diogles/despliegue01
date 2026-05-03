@@ -1,8 +1,9 @@
 require('dotenv').config()
 const http=require('http')
 
-function requestController(){
+function requestController(req, res){
     console.log('Bienvenidos al curso')
+    res.end()
 }
 
 const server=http.createServer(requestController)
